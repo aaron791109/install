@@ -2,8 +2,8 @@
 
 LATEST_VERSION=$(curl -s https://api.github.com/repos/prometheus/node_exporter/releases/latest | grep "tag_name" | awk '{print $2}' | tr -d '",' | sed 's/^v//') && \
 
-curl -sSL https://github.com/prometheus/node_exporter/releases/download/v${LATEST_VERSION}/node_exporter-${LATEST_VERSION#v}.linux-amd64.tar.gz | \
-sudo tar -xz -C /usr/local/bin --strip-components=1 node_exporter-${${LATEST_VERSION}}.linux-amd64/node_exporter && sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
+curl -sSL https://github.com/prometheus/node_exporter/releases/download/v${LATEST_VERSION}/node_exporter-${LATEST_VERSION}.linux-amd64.tar.gz | \
+sudo tar -xz -C /usr/local/bin --strip-components=1 node_exporter-${LATEST_VERSION}.linux-amd64/node_exporter && sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
 
 sudo tee /etc/systemd/system/node_exporter.service  > /dev/null <<EOF
 [Unit]
