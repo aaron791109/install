@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo useradd --system --shell /bin/false node_exporter
 LATEST_VERSION=$(curl -s https://api.github.com/repos/prometheus/node_exporter/releases/latest | grep "tag_name" | awk '{print $2}' | tr -d '",' | sed 's/^v//') && \
 
 curl -sSL https://github.com/prometheus/node_exporter/releases/download/v${LATEST_VERSION}/node_exporter-${LATEST_VERSION}.linux-amd64.tar.gz | \
