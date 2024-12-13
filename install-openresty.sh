@@ -12,7 +12,7 @@ systemctl enable openresty
 systemctl start openresty
 systemctl status openresty
 
-cat << EOF > /usr/local/openresty/nginx/conf/nginx.conf
+cat << "EOF" > /usr/local/openresty/nginx/conf/nginx.conf
 user  openresty;
 worker_processes auto;
 
