@@ -8,9 +8,9 @@ sudo groupadd openresty
 sudo useradd -r -s /sbin/nologin -g openresty openresty
 mkdir /usr/local/openresty/nginx/conf/vhost /var/log/openresty /var/cache/openresty
 chown -R openresty:openresty /var/log/openresty /var/cache/openresty
-systemctl enable openresty
-systemctl start openresty
-systemctl status openresty
+#systemctl enable openresty
+#systemctl start openresty
+#systemctl status openresty
 
 cat << "EOF" > /usr/local/openresty/nginx/conf/nginx.conf
 user  openresty;
