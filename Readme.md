@@ -1,7 +1,7 @@
 
 ### Install systemd node-exporter
 ```bash
-curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/exporter.sh | bash
+curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/install-exporter.sh | bash
 ```
 
 ### Install systemd nginx
@@ -26,11 +26,25 @@ curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/
 
 ### Tuning-linux VM
 ```bash
-curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/tuning-linux.sh.sh | bash
+curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/tuning-linux.sh | bash
 
 ```
 
 ### extend lv vloume to 100% for ubuntu
 ```bash
 curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/ubuntu-extend-disk.sh | bash
+```
+
+
+### install trojan
+```bash
+curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/install-trojan.sh | bash
+
+```
+
+
+### install openvpn
+```bash
+curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/install-openvpn.sh | bash
+
 ```
