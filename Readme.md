@@ -48,3 +48,10 @@ curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/
 curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/install-openvpn.sh | bash
 
 ```
+
+
+### install clear-cdnfly-files
+```bash
+curl -sSL https://raw.githubusercontent.com/aaron791109/install/refs/heads/main/install-clear-cdnfly-files.sh | bash
+
+```
